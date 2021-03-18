@@ -1,19 +1,72 @@
 <!DOCTYPE html>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Exo&family=Raleway&family=Source+Code+Pro&display=swap');
+
+.deepSkyBlue-background {
+    background-color: DeepSkyBlue;
+}
+
+h1 {
+    font-family: Source Code Pro, sans-serif;
+}
+
+h2 {
+    font-family: Exo, sans-serif;
+}
+
+p {
+    font-family: Raleway, monospace;
+}
+
+#CHATBOT {
+    position: absolute;
+    bottom: 30px;
+    width: 50%;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    font-size: 70%;
+}
+input[type=text]{
+        width: 300px;;
+}
+
+</style>
 
 <head>
+    <h1>MemeBot2020</h1>   
 </head>
 
-<body>
+<body class = "deepSkyBlue-background">
     
-    <h1 style="color:blueviolet;">Hello Strażnicy!</h1>
-    <h2> Konrad, Kasia, Wiktoria, Sebastian</h2>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Cute cat photos</a>
-    <h3 style="color: orange;"> Mr. Sebastian was here and attached <a href="https://www.youtube.com/watch?v=j5a0jTc9S10">a real link with cute puppies</a> :3 </h3>
+    <div id = "FAQ" name = "FAQ">
+        <h2>What is MemeBot2020?</h2>
+    
+        <p>MemeBot2020 is a project created for all those loving memes. Our group created it for study purposes for Web Developement classes. It's a chatbot
+        that's supposed to help with finding your favorite memes by providing theirs description. MemeBot then will search through the web and respond to you
+        with that meme.</p>
+    
+        <h2>Ok, but why?</h2>
+    
+        <p>Because we love memes and chatbots, so why not join those two together, and mix the practical part of it with pleasure.</p>
+    
+        <h2>Where is the chatbot tho?</h2>
+    
+        <p>It's coming soon!</p>
+        </div>
+    
+    <div id = "CHATBOT" name = "CHATBOT">
 
-    <div>
-        <img src="https://media.tenor.com/images/c293f2f257e91c8e022ab38e45a60647/tenor.gif" alt="pepegif" />
-    </div>
+        <input id= "CHATBOT input" type = "text" placeholder= "What meme are you searching for?" required>
+        <button type= "submit"> Find meme!</button>
 
-    <footer></footer>
-    <style></style>
+     </div>
+
 </body>
+
+<footer>
+    Strażnicy Pythona™ 2020
+</footer>
