@@ -1,69 +1,92 @@
 <!DOCTYPE html>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Exo&family=Raleway&family=Source+Code+Pro&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Exo&family=Raleway&family=Source+Code+Pro&display=swap');
+    .deepSkyBlue-background {
+        background-color: DeepSkyBlue;
+    }
 
-.deepSkyBlue-background {
-    background-color: DeepSkyBlue;
-}
+    div {
+        background-color: lightsteelblue;
+    }
 
-h1 {
-    font-family: Source Code Pro, sans-serif;
-}
+    div.first {
+        opacity: 0.1;
+    }
 
-h2 {
-    font-family: Exo, sans-serif;
-}
+    div.second {
+        opacity: 0.3;
+    }
 
-p {
-    font-family: Raleway, monospace;
-}
+    div.third {
+        opacity: 0.6;
+    }
+</style>
 
-#CHATBOT {
-    position: absolute;
-    bottom: 30px;
-    width: 50%;
-}
+</html>
 
-footer {
-    position: absolute;
-    bottom: 10px;
-    font-size: 70%;
-}
-input[type=text]{
-        width: 300px;;
-}
+<style>
+    h1 {
+        font-family: Source Code Pro, sans-serif;
+    }
 
+    h2 {
+        font-family: Exo, sans-serif;
+    }
+
+    p {
+        font-family: Raleway, monospace;
+    }
+
+    #CHATBOT {
+        position: absolute;
+        bottom: 30px;
+        width: 50%;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 10px;
+        font-size: 70%;
+    }
+
+    input[type=text] {
+        width: 300px;
+        ;
+    }
 </style>
 
 <head>
-    <h1>MemeBot2021</h1>   
+    <h1>MemeBot2021</h1>
 </head>
 
-<body class = "deepSkyBlue-background">
-    
-    <div id = "FAQ" name = "FAQ">
+<body class="deepSkyBlue-background">
+
+    <div id="FAQ" name="FAQ">
         <h2>What is MemeBot2021?</h2>
-    
-        <p>MemeBot2021 is a project created for all those loving memes. Our group created it for study purposes for Web Developement classes. It's a chatbot
-        that's supposed to help with finding your favorite memes by providing theirs description. MemeBot then will search through the web and respond to you
-        with that meme.</p>
-    
+
+        <p>MemeBot2021 is a project created for all those loving memes. Our group created it for study purposes for Web
+            Developement classes. It's a chatbot
+            that's supposed to help with finding your favorite memes by providing theirs description. MemeBot then will
+            search through the web and respond to you
+            with that meme.</p>
+
         <h2>Ok, but why?</h2>
-    
-        <p>Because we love memes and chatbots, so why not join those two together, and mix the practical part of it with pleasure.</p>
-    
+
+        <p>Because we love memes and chatbots, so why not join those two together, and mix the practical part of it with
+            pleasure.</p>
+
         <h2>Where is the chatbot tho?</h2>
-    
+
         <p>It's coming soon!</p>
-        </div>
-    
-    <div id = "CHATBOT" name = "CHATBOT">
+    </div>
 
-        <input id= "CHATBOT input" type = "text" placeholder= "What meme are you searching for?" required>
-        <button type= "submit"> Find meme!</button>
+    <div id="CHATBOT" name="CHATBOT">
 
-     </div>
+        <input id="CHATBOT input" type="text" placeholder="What meme are you searching for?" required>
+        <button type="submit"> Find meme!</button>
+
+    </div>
 
 </body>
 
