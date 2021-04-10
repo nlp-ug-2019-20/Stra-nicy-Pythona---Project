@@ -1,95 +1,127 @@
 <!DOCTYPE html>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Exo&family=Raleway&family=Source+Code+Pro&display=swap');
-
-    .deepSkyBlue-background {
-        background-color: DeepSkyBlue;
-    }
-
-    div {
-        background-color: lightsteelblue;
-    }
-
-    div.first {
-        opacity: 0.1;
-    }
-
-    div.second {
-        opacity: 0.3;
-    }
-
-    div.third {
-        opacity: 0.6;
-    }
-</style>
-
-</html>
-
-<style>
-    h1 {
-        font-family: Source Code Pro, sans-serif;
-    }
-
-    h2 {
-        font-family: Exo, sans-serif;
-    }
-
-    p {
-        font-family: Raleway, monospace;
-    }
-
-    #CHATBOT {
-        position: absolute;
-        bottom: 30px;
-        width: 50%;
-    }
-
-    footer {
-        position: absolute;
-        bottom: 10px;
-        font-size: 70%;
-    }
-
-    input[type=text] {
-        width: 300px;
-        ;
-    }
-</style>
+<html>
 
 <head>
-    <h1>MemeBot2021</h1>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box
+    }
+
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial;
+    }
+
+
+    .tablink {
+      background-color: #555;
+      color: white;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      font-size: 17px;
+      width: 25%;
+    }
+
+    .tablink:hover {
+      background-color: #777;
+    }
+
+   
+    .tabcontent {
+      color: white;
+      display: none;
+      padding: 100px 20px;
+      height: 100%;
+    }
+
+    #Home {
+      background-color: red;
+    }
+
+    #About {
+      background-color: orange;
+    }
+
+    #MemeoftheDay {
+      background-color: green;
+    }
+
+    #Contact {
+      background-color: blue;
+    }
+  </style>
 </head>
 
-<body class="deepSkyBlue-background">
+<body>
 
-    <div id="FAQ" name="FAQ">
-        <h2>What is MemeBot2021?</h2>
+  <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Home</button>
+  <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+  <button class="tablink" onclick="openPage('MemeoftheDay', this, 'green')">MemeoftheDay</button>
+  <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
 
-        <p>MemeBot2021 is a project created for all those loving memes. Our group created it for study purposes for Web
-            Developement classes. It's a chatbot
-            that's supposed to help with finding your favorite memes by providing theirs description. MemeBot then will
-            search through the web and respond to you
-            with that meme.</p>
 
-        <h2>Ok, but why?</h2>
-
-        <p>Because we love memes and chatbots, so why not join those two together, and mix the practical part of it with
-            pleasure.</p>
-
-        <h2>Where is the chatbot tho?</h2>
-
-        <p>It's coming soon!</p>
-    </div>
+  <div id="Home" class="tabcontent">
+    <h3>Memebot2021</h3>
+    <p>Home will be the Memebot2021.</p>
 
     <div id="CHATBOT" name="CHATBOT">
 
-        <input id="CHATBOT input" type="text" placeholder="What meme are you searching for?" required>
-        <button type="submit"> Find meme!</button>
+      <input id="CHATBOT input" type="text" placeholder="What meme are you searching for?" required>
+      <button type="submit"> Find meme!</button>
 
-    </div>
+  </div>
+
+  </div>
+
+  <div id="About" class="tabcontent">
+    <h3>What is MemeBot2021?</h3>
+    <p>MemeBot2021 is a project created for all those loving memes. Our group created it for study purposes for Web
+      Developement classes. It's a chatbot
+      that's supposed to help with finding your favorite memes by providing theirs description. MemeBot then will
+      search through the web and respond to you
+      with that meme.</p>
+  </div>
+
+  <div id="MemeoftheDay" class="tabcontent">
+    <h3>Meme of the Day</h3>
+    <p>here will be the meme.</p>
+  </div>
+
+  <div id="Contact" class="tabcontent">
+    <h3>Contact</h3>
+    <p>Get in touch with us.</p>
+  </div>
+
+
+
+  <script>
+    function openPage(pageName, elmnt, color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    }
+
+    document.getElementById("defaultOpen").click();
+
+  </script>
+  <footer>
+    Strażnicy Pythona™ 2021
+</footer>
 
 </body>
 
-<footer>
-    Strażnicy Pythona™ 2021
-</footer>
+</html>
