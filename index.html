@@ -17,7 +17,7 @@
 
 
     .tablink {
-      background-color: #555;
+      background-color: #485058;
       color: white;
       float: left;
       border: none;
@@ -31,39 +31,42 @@
     .tablink:hover {
       background-color: #777;
     }
-
    
     .tabcontent {
       color: white;
       display: none;
       padding: 100px 20px;
       height: 100%;
+      text-align: center;
     }
 
-    #Home {
-      background-color: red;
+    textarea {  
+        resize: vertical;
+        width:300px; 
+        height:150px; 
+        overflow:auto;
+    } 
+
+    footer {
+        background-color: #343a40;
+        color: white;
     }
 
-    #About {
-      background-color: orange;
+    #Home, #About, #MemeoftheDay, #Contact {
+      background-color: #343a40;
     }
 
-    #MemeoftheDay {
-      background-color: green;
-    }
 
-    #Contact {
-      background-color: blue;
-    }
+
   </style>
 </head>
 
 <body>
 
-  <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Home</button>
-  <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
-  <button class="tablink" onclick="openPage('MemeoftheDay', this, 'green')">MemeoftheDay</button>
-  <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+  <button class="tablink" onclick="openPage('Home', this, '#5f6a75')" id="defaultOpen">Home</button>
+  <button class="tablink" onclick="openPage('About', this, '#5f6a75')">About</button>
+  <button class="tablink" onclick="openPage('MemeoftheDay', this, '#5f6a75')">MemeoftheDay</button>
+  <button class="tablink" onclick="openPage('Contact', this, '#5f6a75')">Contact</button>
 
 
   <div id="Home" class="tabcontent">
@@ -72,7 +75,7 @@
 
     <div id="CHATBOT" name="CHATBOT">
 
-      <input id="CHATBOT input" type="text" placeholder="What meme are you searching for?" required>
+      <textarea id="textarea" placeholder="What meme are you searching for?" required></textarea>
       <button type="submit"> Find meme!</button>
 
   </div>
