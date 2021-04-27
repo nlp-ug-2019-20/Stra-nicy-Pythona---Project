@@ -3,265 +3,35 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    * {
-      box-sizing: border-box
-    }
-
-    body,
-    html {
-      height: 100%;
-      margin: 0;
-      font-family: Arial;
-    }
-
-    .tablink {
-      background-color: #485058;
-      color: white;
-      float: left;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      padding: 16px;
-      font-size: 17px;
-      width: 25%;
-    }
-    
-
-    .tablink:hover {
-      background-color: #777;
-    }
-   
-    .tabcontent {
-      color: white;
-      display: none;
-      padding: 100px 20px;
-      height: 100%;
-      text-align: center;
-    }
-
-    textarea {  
-        resize: vertical;
-        width:300px; 
-        height:150px; 
-        overflow:auto;
-    } 
-
-    footer {
-        background-color: #343a40;
-        color: white;
-    }
-
-    #Home, #About, #MemeoftheDay, #Contact {
-      background-color: #343a40;
-    }
-
-    @media (max-width: 499px) {
-    .tablink{
-      font-size: 11px;
-      padding: 10px
-    }
-    p{
-      font-size: 11px;
-    }
-    h3{
-      font-size: 11px;
-    }
-    textarea{
-      font-size:11px;
-      width:180px; 
-      height:90px
-    }
-    footer{
-      font-size:11px
-    }
-    }
-    
-    @media (min-width: 500px) {
-    .tablink{
-      font-size: 12px;
-      padding: 11px
-    }
-    p{
-      font-size: 12px;
-    }
-    h3{
-      font-size: 12px;
-    }
-    textarea{
-      font-size:12px;
-      width:200px; 
-      height:100px}
-    footer{
-      font-size:12px
-    }
-    }
-    
-    @media (min-width: 540px) {
-    .tablink{
-      font-size: 13px;
-      padding: 12px
-    }
-    p{
-      font-size: 13px;
-    }
-    h3{
-      font-size: 13px;
-    }
-    textarea{
-      font-size:13px;
-      width:220px; 
-      height:110px}
-    footer{
-      font-size:13px
-    }
-    }
-    
-    @media (min-width: 600px) {
-    .tablink{
-      font-size: 14px;
-      padding: 13px
-    }
-    p{
-      font-size: 14px;
-    }
-    h3{
-      font-size: 14px;
-    }
-    textarea{
-      font-size:14px;
-      width:240px; 
-      height:120px}
-    footer{
-      font-size:14px
-    }
-    }
-    
-    @media (min-width: 680px) {
-    .tablink{
-      font-size: 15px;
-      padding: 14px
-    }
-    p{
-      font-size: 15px;
-    }
-    h3{
-      font-size: 15px;
-    }
-    textarea{
-      font-size:15px;
-      width:260px; 
-      height:130px}
-    footer{
-      font-size:15px
-    }
-    }
-    
-    @media (min-width: 760px) {
-    .tablink{
-      font-size: 16px;
-      padding: 15px
-    }
-    p{
-      font-size: 16px;
-    }
-    h3{
-      font-size: 16px;
-    }
-    textarea{
-      font-size:16px;
-      width:280px; 
-      height:140px}
-    footer{
-      font-size:16px
-    }
-    }
-    
-    @media (min-width: 1020px) {
-    .tablink{
-      font-size: 17px;
-      padding: 16px
-    }
-    p{
-      font-size: 17px;
-    }
-    h3{
-      font-size: 17px;
-    }
-    textarea{
-      font-size:17px;
-      width:300px; 
-      height:150px}
-    footer{
-      font-size:17px
-    }
-    }
-
-
-
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-  <button class="tablink" onclick="openPage('Home', this, '#5f6a75')" id="defaultOpen">Home</button>
-  <button class="tablink" onclick="openPage('About', this, '#5f6a75')">About</button>
-  <button class="tablink" onclick="openPage('MemeoftheDay', this, '#5f6a75')">MemeoftheDay</button>
-  <button class="tablink" onclick="openPage('Contact', this, '#5f6a75')">Contact</button>
-
-
-  <div id="Home" class="tabcontent">
-    <h3>Memebot2021</h3>
-    <p>Here will be the Memebot2021.</p>
-
-    <div id="CHATBOT" name="CHATBOT">
-
-      <textarea id="textarea" placeholder="What meme are you searching for?" required></textarea>
-      <button type="submit"> Find meme!</button>
-
+  <div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    
   </div>
-
+  <div class="text">
+    <h3>Here will be a meme slideshow!</h3>
+    <p>
+      We're currently working on a meme slideshow that will be placed right here! This paragraph is only for the layout to see whether the rest of the content will look good with it!
+    </p>
   </div>
-
-  <div id="About" class="tabcontent">
-    <h3>What is MemeBot2021?</h3>
-    <p>MemeBot2021 is a project created for all those loving memes. Our group created it for study purposes for Web
-      Developement classes. It's a chatbot
-      that's supposed to help with finding your favorite memes by providing theirs description. MemeBot then will
-      search through the web and respond to you
-      with that meme.</p>
+  <div class="content row text">
+    <div id="BOT-Logo" class="column left">
+      <h3>BOT LOGO</h3>
+      <p>Here will be a logo of the bot. We are still working on it. Please be patient.</p>
+    </div>
+    <div id="BOT" class="column right text">
+      <h3>Memebot2021</h3>
+      <p>Here will be the Memebot2021.</p>
+      <div id="CHATBOT" name="CHATBOT" class="container column right">
+        <textarea id="textarea" placeholder="What meme are you searching for?" required></textarea>
+        <button type="submit"> Find meme!</button>
+      </div>
+    </div>
   </div>
-
-  <div id="MemeoftheDay" class="tabcontent">
-    <h3>Meme of the Day</h3>
-    <p>Here will be the meme.</p>
-  </div>
-
-  <div id="Contact" class="tabcontent">
-    <h3>Contact</h3>
-    <p>Get in touch with us.</p>
-  </div>
-
-
-
-  <script>
-    function openPage(pageName, elmnt, color) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablink");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
-      }
-      document.getElementById(pageName).style.display = "block";
-      elmnt.style.backgroundColor = color;
-    }
-
-    document.getElementById("defaultOpen").click();
-
-  </script>
+  
   <footer>
     Strażnicy Pythona™ 2021
 </footer>
