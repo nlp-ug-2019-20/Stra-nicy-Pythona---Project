@@ -3,20 +3,28 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="topnav">
-    <a class="active" href="index.html">Home</a>
-    
+  <script src="script.js">
+  </script>
+
+  <div id="topnav" class="topnav">
+    <a class="nav" href="index.html">Home</a>
+    <a class="nav" href="about-us.html">About us</a>
+    <a class="nav" href="project.html">About the project</a>
   </div>
-  <div class="text">
+
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
     <h3>Here will be a meme slideshow!</h3>
     <p>
       We're currently working on a meme slideshow that will be placed right here! This paragraph is only for the layout to see whether the rest of the content will look good with it!
     </p>
   </div>
+
   <div class="content row text">
     <div id="BOT-Logo" class="column left">
       <h3>BOT LOGO</h3>
@@ -33,8 +41,20 @@
   </div>
   
   <footer>
-    Strażnicy Pythona™ 2021
+     ©2021 by Strażnicy Pythona™. Created using <a href="https://knowyourmeme.com/">knowyourmeme</a>
 </footer>
+
+<script>
+  var topNav = document.getElementById("topnav");
+  var navs = topNav.getElementsByClassName("nav");
+  for (var i = 0; i < navs.length; i++) {
+    navs[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+</script>
 
 </body>
 
