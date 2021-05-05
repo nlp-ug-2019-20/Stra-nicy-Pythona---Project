@@ -1,0 +1,647 @@
+/* Main */
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background-color: white;
+}
+
+div {
+    column-gap: 60px;
+}
+
+h3, h4 {
+    text-align: center;
+    color: #59981A
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.left{
+    width: 50%;
+}
+
+.right {
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.text {
+    text-align: center;
+    font-size: 20px;
+    color: #050606;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 320px;
+    height: 200px;
+    left: 68px;
+    border: 1px solid white;
+    margin: 0 auto;
+    
+}
+
+textarea {  
+    position: relative;
+    border: none;
+    resize: vertical;
+    width: 300px; 
+    height: 150px; 
+    overflow: auto;
+    border: 1px solid #050606;
+} 
+
+button {
+    position: relative;
+    bottom: -10px;
+    right: -20px;
+    width: 70px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    margin: 0 auto;
+    background-color: white;
+    color: #050606;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+/* Subpages */
+.content {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.text-subpage {
+    text-align: left;
+    color: #050606;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+/* Navigation */
+.topnav {
+    overflow: hidden;
+    background-color: #203709;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #406D12;
+    color: white;
+}
+
+.topnav a.active {
+    background-color: #538E18;
+    color: white;
+}
+
+.topnav a:visited {
+    color: white;
+}
+
+/* Slideshow */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    height: 300px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Images in text */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.LogoJpg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+/* Links */
+/* unvisited link */
+a:link {
+    color: #59981A;
+}
+/* visited link */
+a:visited {
+    color: #406D12;
+    }
+/* mouse over link */
+a:hover {
+    color: #71C121;
+}
+
+#LogoJpg {
+    border: 5px solid black;
+    width: 300px;
+    height: auto;
+}
+/*Responsiveness*/
+    /*Responsiveness for PC*/
+    @media (min-width: 1020px) {
+      .topnav a {
+        font-size: 17px;
+        padding: 16px
+      }
+      p, h3{
+        font-size: 17px;
+      }
+      h4{
+          font-size: 18px;
+      }
+      textarea{
+        font-size:17px;
+        width:300px; 
+        height:150px;
+        right:40px
+      }
+      footer{
+        font-size:17px
+      }
+      button {
+          position: relative;
+          bottom: -10px;
+          right: 37px;
+          width: 100px;
+          height: 40px
+      }
+      }
+      /*Responsiveness for tablets*/
+      @media (max-width: 1019px) {
+        body {
+          position: absolute;
+          width: 100vw;
+        }
+      .topnav a {
+        width: 25vw;
+        font-size: 19px;
+        padding: 18px;
+      }
+      .column {
+        width: 100%;
+      }
+      .left{
+          width: 100%;
+      }
+      .right {
+          width: 100%;
+      }
+      p, h3{
+        font-size: 19px;
+      }
+      h4{
+          font-size: 20px;
+      }
+  
+      .container {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        left: 0;
+      }
+  
+      textarea{
+        font-size: 19px;
+        width: 100%; 
+        height:100%;
+        
+      }
+      footer{
+        font-size:19px;
+      }
+      button {
+          position: relative;
+          bottom: -10px;
+          left: 0;
+          width: 150px;
+          font-size: 17px;
+          height:55px
+      }
+      #LogoJpg {
+        width: 100%;
+        height: auto;
+      }
+    }
+    @media (max-width: 799px) {
+      body {
+        position: absolute;
+        width: 100vw;
+      }
+    .topnav a {
+      width: 25vw;
+      font-size: 18px;
+      padding: 17px;
+    }
+    .column {
+      width: 100%;
+    }
+    .left{
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+    }
+    p, h3{
+      font-size: 18px;
+    }
+    h4{
+        font-size: 19px;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      left: 0;
+      /* border: 1px solid white; */
+      /* margin: 0 auto; */
+    }
+
+    textarea{
+      font-size: 18px;
+      width: 100%; 
+      height:100%;
+      
+    }
+    footer{
+      font-size:18px;
+    }
+    button {
+        position: relative;
+        bottom: -10px;
+        left: 0;
+        width: 140px;
+        font-size: 16px;
+        height:50px
+    }
+    #LogoJpg {
+      width: 100%;
+      height: auto;
+    }
+    }
+    @media (max-width: 679px) {
+      body {
+        position: absolute;
+        width: 100vw;
+      }
+    .topnav a {
+      width: 25vw;
+      font-size: 17px;
+      padding: 16px;
+    }
+    .column {
+      width: 100%;
+    }
+    .left{
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+    }
+    p, h3{
+      font-size: 17px;
+    }
+    h4{
+        font-size: 18px;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      left: 0;
+    }
+
+    textarea{
+      font-size: 17px;
+      width: 100%; 
+      height:100%;
+      
+    }
+    footer{
+      font-size:17px;
+    }
+    button {
+        position: relative;
+        bottom: -10px;
+        left: 0;
+        width: 130px;
+        font-size: 15px;
+        height:45px
+    }
+    #LogoJpg {
+      width: 100%;
+      height: auto;
+    }
+    }
+    /*Responsiveness for mobile phones*/
+    @media (max-width: 599px) {
+      body {
+        position: absolute;
+        width: 100vw;
+      }
+    .topnav a {
+      width: 100vw;
+      font-size: 16px;
+      padding: 15px;
+    }
+    .column {
+      width: 100%;
+    }
+    .left{
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+    }
+    p, h3{
+      font-size: 16px;
+    }
+    h4{
+        font-size: 17px;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      left: 0;
+    }
+
+    textarea{
+      font-size: 16px;
+      width: 100%; 
+      height:100%;
+      
+    }
+    footer{
+      font-size:16px;
+    }
+    button {
+        position: relative;
+        bottom: -10px;
+        left: 0;
+        width: 115px;
+        font-size: 14px;
+        height:40px
+    }
+    #LogoJpg {
+      width: 100%;
+      height: auto;
+    }
+  }
+  @media (max-width: 539px) {
+    body {
+      position: absolute;
+      width: 100vw;
+    }
+  .topnav a {
+    width: 100vw;
+    font-size: 15px;
+    padding: 14px;
+  }
+  .column {
+    width: 100%;
+  }
+  .left{
+      width: 100%;
+  }
+  .right {
+      width: 100%;
+  }
+  p, h3{
+    font-size: 15px;
+  }
+  h4{
+      font-size: 16px;
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    left: 0;
+  }
+
+  textarea{
+    font-size: 15px;
+    width: 100%; 
+    height:100%;
+    
+  }
+  footer{
+    font-size:15px;
+  }
+  button {
+      position: relative;
+      bottom: -10px;
+      left: 0;
+      width: 100px;
+      font-size: 13px;
+      height: 37px;
+  }
+  #LogoJpg {
+    width: 100%;
+    height: auto;
+  }
+  }
+  @media (max-width: 499px) {
+    body {
+      position: absolute;
+      width: 100vw;
+    }
+  .topnav a {
+    width: 100vw;
+    font-size: 14px;
+    padding: 13px;
+  }
+  .column {
+    width: 100%;
+  }
+  .left{
+      width: 100%;
+  }
+  .right {
+      width: 100%;
+  }
+  p, h3{
+    font-size: 14px;
+  }
+  h4{
+      font-size: 15px;
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    left: 0;
+  }
+
+  textarea{
+    font-size: 14px;
+    width: 100%; 
+    height:100%;
+    
+  }
+  footer{
+    font-size:14px;
+  }
+  button {
+      position: relative;
+      bottom: -10px;
+      left: 0;
+      width: 80px;
+      font-size: 11px;
+      height:33px
+  }
+  #LogoJpg {
+    width: 100%;
+    height: auto;
+  }
+  }
+  @media (max-width: 419px) {
+    body {
+      position: absolute;
+      width: 100vw;
+    }
+  .topnav a {
+    width: 100vw;
+    font-size: 13px;
+    padding: 12px;
+  }
+  .column {
+    width: 100%;
+  }
+  .left{
+      width: 100%;
+  }
+  .right {
+      width: 100%;
+  }
+  p, h3{
+    font-size: 13px;
+  }
+  h4{
+      font-size: 14px;
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    left: 0;
+  }
+
+  textarea{
+    font-size: 13px;
+    width: 100%; 
+    height:100%;
+    
+  }
+  footer{
+    font-size:13px;
+  }
+  button {
+      position: relative;
+      bottom: -5px;
+      left: 0;
+      width: 80px;
+      font-size: 11px;
+      height:30px
+  }
+  #LogoJpg {
+    width: 100%;
+    height: auto;
+  }
+  }
+    @media (max-width: 369px) {
+      body {
+        position: absolute;
+        width: 100vw;
+      }
+    .topnav a {
+      width: 100vw;
+      font-size: 12px;
+      padding: 11px;
+    }
+    .column {
+      width: 100%;
+    }
+    .left{
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+    }
+    p, h3{
+      font-size: 12px;
+    }
+    h4{
+        font-size: 13px;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      left: 0;
+    }
+
+    textarea{
+      font-size: 12px;
+      width: 100%; 
+      height:100%;
+      
+    }
+    footer{
+      font-size:12px;
+    }
+    button {
+        position: relative;
+        bottom: -1px;
+        left: 0;
+        width: 80px;
+        font-size: 10px;
+        height:30px
+    }
+    #LogoJpg {
+      width: 100%;
+      height: auto;
+    }
+    }
