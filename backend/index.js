@@ -30,11 +30,11 @@ app.get('/project', (req, resp) => {
 });
 
 app.get('/api/random', (req, resp) => {
-  nodeyourmeme.random().then(console.log).catch(console.error);
+  nodeyourmeme.random().then(response => resp.send(response)).catch(error => resp.send(error));
 });
 
 app.get('/api/search', (req, resp) => {
   let searchPhrase = req.query.search
-  nodeyourmeme.search(searchPhrase).then(console.log).catch(console.error);
+  nodeyourmeme.search(searchPhrase).then(response => resp.send(response)).catch(error => resp.send(error));
 });
 
