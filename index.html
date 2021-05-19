@@ -8,8 +8,7 @@
 </head>
 
 <body>
-  <script src="script.js">
-  </script>
+
 
   <div id="topnav" class="topnav">
     <a class="nav" href="index.html">Home</a>
@@ -19,12 +18,38 @@
 
   <!-- Slideshow container -->
   <div class="slideshow-container">
-    <h3>Here will be a meme slideshow!</h3>
-    <p>
-      We're currently working on a meme slideshow that will be placed right here! This paragraph is only for the layout to see whether the rest of the content will look good with it!
-    </p>
-  </div>
 
+    <div class="mySlides fade">
+      <!-- <div class="numbertext">1 / 3</div> -->
+      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.wired.it%2Fwp-content%2Fuploads%2F2019%2F06%2F14122213%2F1023.jpg&f=1&nofb=1" style="width:100%">
+      <!-- <div class="text-slide">King of the memes: Pepe</div> -->
+    </div>
+    
+    <div class="mySlides fade">
+      <!-- <div class="numbertext">2 / 3</div> -->
+      <img src="https://preview.redd.it/lzitqza6fza41.jpg?width=640&crop=smart&auto=webp&s=c0dcf063b28b4db442d8d627071e3363f7e8f736" style="width:100%">
+      <!-- <div class="text-slide">Confused Nick</div> -->
+    </div>
+    
+    <div class="mySlides fade">
+      <!-- <div class="numbertext">3 / 3</div> -->
+      <img src="https://www.teachwire.net/uploads/news/Whole_Class_Has_Their_Hand_Up.jpg" style="width:100%">
+      <!-- <div class="text-slide">We've all had that one teacher</div> -->
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+<!-- content -->
   <div class="content row text">
     <div id="BOT-Logo" class="column left">
       <img src="https://i.imgur.com/qWqMRtW.jpeg" id= "LogoJpg">
@@ -40,8 +65,10 @@
   </div>
   
   <footer>
-     ©2021 by Strażnicy Pythona™. Created using <a href="https://knowyourmeme.com/">knowyourmeme</a>
+     ©2021 by Strażnicy Pythona™. Created using <a href="https://glitch.com/~meme-api">Meme-API</a>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 
