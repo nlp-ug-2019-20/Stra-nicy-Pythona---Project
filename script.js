@@ -42,3 +42,16 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   timer = setTimeout(showSlides, 5000);
 }
+
+//Get a random meme
+document.addEventListener("click", function (event) {
+    // Checking if the button was clicked
+    if (!event.target.matches("#button")) return;
+  
+    fetch("https://meme-api.herokuapp.com/gimme")
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data.url);
+            document.getElementById('randomMeme').src = data.url;
+        })
+    });
