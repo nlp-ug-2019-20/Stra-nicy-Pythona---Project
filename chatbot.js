@@ -13,12 +13,13 @@ function bot() {
     output.innerHTML = 'Hello, ' + input +"."; // output response
     document.getElementById("input").value = "";   		// clear text box
     question = 'Would you like me to display a random meme for you? That\'s what I do :)';			    	// load next question		
-    setTimeout(timedQuestion, 3000);									// output next question after 2sec delay
+    setTimeout(timedQuestion, 2000);									// output next question after 2sec delay
     }
-
+//Questions and responses
     else if (questionNum == 1 & input === "Yes" || input === "Sure") {
     output.innerHTML = 'Alright. Then here you go, press the button below and look at random memes from Reddit. Enjoy! :)';
-    document.getElementById("input").value = "";   				      	
+    document.getElementById("button").removeAttribute("hidden");
+    document.getElementById("input").value = "";	      	
 
     }   
     else if (questionNum == 1 & input === "No" || input === "Nope") {
@@ -27,6 +28,7 @@ function bot() {
     }
     else if (questionNum == 2 & input === "Alright, show me some memes" || input === "Ok" || input === "Show memes") {
       output.innerHTML = 'Then here, click on the button below and enjoy the memes!';
+      document.getElementById("button").removeAttribute("hidden");
       document.getElementById("input").value ="";
     }
     else if (questionNum == 1 & input === "You're stupid" || input === "Fudge off" || input === "I hate you") {
@@ -35,6 +37,10 @@ function bot() {
     }
     else if (questionNum == 1 & input === "I love you" || input === "You're the best" || input === "You're awesome") {
       output.innerHTML = "Awww, thank you. You are cool too! Want to watch some memes?";
+      document.getElementById("input").value ="";
+    }
+    else if (questionNum == 2 || questionNum == 3  & input === "Thank you" || input === "Awesome") {
+      output.innerHTML = "No problem. Glad I could help. Enjoy!";
       document.getElementById("input").value ="";
 }}
 
