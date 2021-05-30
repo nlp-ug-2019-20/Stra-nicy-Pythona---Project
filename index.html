@@ -54,23 +54,27 @@
     <div id="BOT-Logo" class="column left">
       <img src="https://i.imgur.com/qWqMRtW.jpeg" id= "LogoJpg">
     </div>
+    <div></div>
     <div id="BOT" class="column right text">
       <h3>Memebot2021</h3>
-      <p>Here will be the Memebot2021.</p>
+      <div id="output"></div>
       <div id="CHATBOT" name="CHATBOT" class="container column right">
-        <textarea id="textarea" placeholder="What meme are you searching for?" required></textarea>
-        <button id = "button" type="button"> Get a random meme!</button>
+        <input type="text" id="input" placeholder="Type here...">
+        <div>
+        <button hidden id = "button" type="button"> Get a random meme!</button>
+        </div>
       </div>
-      <p><img src= '' id="randomMeme"></p>
+  
+      <img src= '' id="randomMeme">
     </div>
   </div>
-  
+  <div><img src= '' id="randomMeme"></div>
 <footer>
      ©2021 by Strażnicy Pythona™. Created using <a href="https://github.com/D3vd/Meme_Api?fbclid=IwAR23Ef_kCySNn9pVBANCFtrUtwGehNBqdL_J0xnfJhpPJWifo37JZg8r4ho">Meme-API</a>
 </footer>
 
 <script src="script.js"></script>
-
+<script src="chatbot.js"></script>
 </body>
 
 </html>
