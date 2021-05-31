@@ -360,11 +360,14 @@ width: 500px;
       font-size: 17px;
       padding: 16px
     }
-    p, h3{
+    p, h3, h2{
       font-size: 17px;
     }
     h4{
         font-size: 18px;
+    }
+    h1{
+      font-size: 35px
     }
     textarea{
       font-size:17px;
@@ -405,11 +408,14 @@ width: 500px;
     .right {
         width: 100%;
     }
-    p, h3{
+    p, h3, h2{
       font-size: 19px;
     }
     h4{
         font-size: 20px;
+    }
+    h1{
+      font-size: 40px
     }
 
     .container {
@@ -463,11 +469,14 @@ width: 500px;
   .right {
       width: 100%;
   }
-  p, h3{
+  p, h3, h2{
     font-size: 18px;
   }
   h4{
       font-size: 19px;
+  }
+  h1{
+    font-size: 34px
   }
 
   .container {
@@ -524,11 +533,14 @@ width: 500px;
   .right {
       width: 100%;
   }
-  p, h3{
+  p, h3, h2{
     font-size: 17px;
   }
   h4{
       font-size: 18px;
+  }
+  h1{
+    font-size: 33px
   }
 
   .container {
@@ -583,11 +595,14 @@ width: 500px;
   .right {
       width: 100%;
   }
-  p, h3{
+  p, h3, h2{
     font-size: 16px;
   }
   h4{
       font-size: 17px;
+  }
+  h1{
+    font-size: 32px
   }
 
   .container {
@@ -641,11 +656,14 @@ width: 500px;
 .right {
     width: 100%;
 }
-p, h3{
+p, h3, h2{
   font-size: 15px;
 }
 h4{
     font-size: 16px;
+}
+h1{
+  font-size: 31px
 }
 
 .container {
@@ -699,11 +717,14 @@ footer{
 .right {
     width: 100%;
 }
-p, h3{
+p, h3, h2{
   font-size: 14px;
 }
 h4{
     font-size: 15px;
+}
+h1{
+  font-size: 30px
 }
 
 .container {
@@ -757,11 +778,14 @@ footer{
 .right {
     width: 100%;
 }
-p, h3{
+p, h3, h2{
   font-size: 13px;
 }
 h4{
     font-size: 14px;
+}
+h1{
+  font-size: 29px
 }
 
 .container {
@@ -815,11 +839,14 @@ footer{
   .right {
       width: 100%;
   }
-  p, h3{
+  p, h3, h2{
     font-size: 12px;
   }
   h4{
       font-size: 13px;
+  }
+  h1{
+    font-size: 28px
   }
 
   .container {
