@@ -12,7 +12,7 @@ div {
   column-gap: 60px;
 }
 
-h1, h2, h3, h4 {
+h2, h3, h4 {
   text-align: center;
   color: #59981A
 }
@@ -141,6 +141,7 @@ clear: both;
   width: 100%;
   display: block;
   margin-bottom: 20px;
+  margin-left: 13%;
 }
 }
 
@@ -224,6 +225,7 @@ width: 300px;
 /* Slideshow */
 .mySlides {display: none}
 img {vertical-align: middle}
+
 /* Slideshow container */
 .slideshow-container {
 max-width: 800px;
