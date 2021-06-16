@@ -39,7 +39,7 @@ function bot() {
       output.innerHTML = "Awww, thank you. You are cool too! Want to watch some memes?";
       document.getElementById("input").value ="";
     }
-    else if (questionNum == 2 || questionNum == 3  & input === "Thank you" || input === "Awesome" || input === "awesome" || input === "thank you") {
+    else if (questionNum == 2 || questionNum == 3  && (input.toLowerCase() === "thank you" || input.toLowerCase() === "awesome")) {
       output.innerHTML = "No problem. Glad I could help. Enjoy!";
       document.getElementById("input").value ="";
 }}
